@@ -2,6 +2,7 @@
 {-# LANGUAGE OverloadedStrings #-}
 {-# LANGUAGE TemplateHaskell #-}
 {-# LANGUAGE MultiParamTypeClasses #-}
+{-# LANGUAGE QuasiQuotes #-}
 {-# LANGUAGE TypeFamilies #-}
 module Handler.Home where
 
@@ -14,10 +15,10 @@ getHomeR = do
     defaultLayout $ do
         toWidgetHead [julius|
             function ola(){
-                aert("OI");
+                alert("OI");
             }
         |]
-        toWidgetHead [Lucius|
+        toWidgetHead [lucius|
             h1{
                 color:blue;
             }
@@ -25,4 +26,6 @@ getHomeR = do
         [whamlet|
             <h1>
                 OI CACHORRA!
+            <button onclick="ola()">
+                OK!
         |]
