@@ -15,7 +15,7 @@ getHomeR = do
     defaultLayout $ do
         toWidgetHead [julius|
             function ola(){
-                alert("OI");
+                alert("TA CURIOSO?? KKKKKJ");
             }
         |]
         toWidgetHead [lucius|
@@ -25,7 +25,7 @@ getHomeR = do
         |]
         [whamlet|
             <h1>
-                OI CACHORRA!
+                NAUM SEI!
             <button onclick="ola()">
                 OK!
         |]
