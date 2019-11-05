@@ -25,7 +25,7 @@ getHomeR = do
         |]
         [whamlet|
             <h1>
-                NAUM SEI!
+                NAUM SEEI!
             <button onclick="ola()">
                 OK!
         |]
